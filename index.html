@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>IMPCI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light d-none d-lg-block">
+    <div class="row align-items-center top-bar">
+        <div class="col-lg-3 col-md-12 text-center text-lg-start">
+            <a href="" class="navbar-brand m-0 p-0 d-flex align-items-center">
+                <img src="img/Log.PNG" alt="Log" class="me-2" width="50"> <!-- A margem à direita da imagem foi reduzida para aproximar o texto -->
+                <h1 class="m-0" style="color: #FF4917;">IMPCI</h1>
+            </a>
+        </div>
+        <div class="col-lg-9 col-md-12 text-end"> <!-- Adiciona uma nova coluna para mover o endereço para a direita -->
+            <div class="h-100 d-inline-flex align-items-center me-4">
+                <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                <p class="m-0">Bairro Francisco Manhanga, Após o Mercado 38
+                    Cidade de Chimoio, Província de Manica,
+                    Moçambique</p>
+            </div>
+        </div>
+    </div>
+</div>   
+        <div class="col-lg-9 col-md-12 text-end ms-auto"> <!-- Alinha todos os itens à direita -->
+            <div class="h-100 d-inline-flex align-items-center me-4">
+                <i class="far fa-envelope-open text-primary me-2"></i>
+                <p class="m-0">impdecienciaeinovacao@gmail.com</p>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center">
+                <a class="btn btn-sm-square bg-white text-primary me-1" href="https://web.facebook.com/profile.php?id=100069859640023&__tn__=-UC*F"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-1" href="https://wa.me/258845911627">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+            <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+                <h1 class="m-0" style="color: #FF4917;">IMPCI</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto">
+                    <a href="index.html" class="nav-item nav-link active" style="color: #FF4917;">
+                        <i class="fas fa-home me-2" style="color: #FF4917;"></i> Início
+                    </a>
+                    <a href="about.html" class="nav-item nav-link">
+                        <i class="fas fa-info-circle me-2"></i> Sobre Nós
+                    </a>
+                   <!-- Link para abrir o Modal -->
+<a href="#" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#cursosModal">
+    <i class="fas fa-book-open me-2"></i> Cursos e Qualificações
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="cursosModal" tabindex="-1" aria-labelledby="cursosModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cursosModalLabel">Cursos e Qualificações do IMPCI</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/EG.png" class="card-img-top" alt="Curso 1" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Enfermagem Geral</h5>
+                                <p class="card-text" style="text-align: justify;">Seja a mudança no mundo através do cuidado e da dedicação. Venha fazer parte dessa missão!</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/ESMI.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Enfermagem de Saúde Materna Infantil</h5>
+                                <p class="card-text" style="text-align: justify;">Formação de excelência para cuidar com conhecimento, dedicação e humanização desde a gestação até os primeiros anos de vida.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/Lb.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Laboratório de Análises Clínicas</h5>
+                                <p class="card-text" style="text-align: justify;"></p>Formação de qualidade para futuros profissionais na realização de exames laboratoriais.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/FRM.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Farmácia</h5>
+                                <p class="card-text" style="text-align: justify;">Capacitação de excelência para o desenvolvimento, controle e distribuição de medicamentos, garantindo saúde e bem-estar com conhecimento e ética..</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/MP.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Medicina Preventiva e Saneamento do Meio</h5>
+                                <p class="card-text" style="text-align: justify;">Promovendo a saúde e prevenindo doenças, com foco na qualidade de vida e no cuidado ambiental.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/AH.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Administração Hospitalar</h5>
+                                <p class="card-text" style="text-align: justify;">Gestão eficiente de recursos e serviços de saúde, garantindo qualidade no atendimento e excelência na administração hospitalar.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/Nutri.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Nutrição</h5>
+                                <p class="card-text" style="text-align: justify;">Promoção da saúde através da alimentação equilibrada, capacitando profissionais para orientar e transformar vidas com conhecimento e cuidado nutricional.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/MG.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Medicina Geral</h5>
+                                <p class="card-text" style="text-align: justify;">Formação completa para futuros médicos, capacitando-os a diagnosticar, tratar e prevenir doenças, promovendo saúde com competência e empatia em cada atendimento.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/Gestao.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Gestão</h5>
+                                <p class="card-text" style="text-align: justify;">Formação voltada para o desenvolvimento de líderes capazes de planificar, coordenar e otimizar recursos.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/GRH.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Gestão de Recursos Humanos</h5>
+                                <p class="card-text" style="text-align: justify;">Desenvolvendo competências para gerenciar talentos, promover o bem-estar organizacional e contribuir para o sucesso das equipes e empresas.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/AP.png" class="card-img-top" alt="Curso 2" style="width: 70%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Administração Pública</h5>
+                                <p class="card-text" style="text-align: justify;">Gerindo com eficiencia os recursos e serviços públicos, com foco na melhoria da qualidade de vida da sociedade e no desenvolvimento sustentável.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/Conta.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Contabilidade</h5>
+                                <p class="card-text" style="text-align: justify;">Formação essencial para o domínio das práticas financeiras, capacitando profissionais a gerenciar, analisar e otimizar recursos, garantindo a saúde econômica de empresas e organizações.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/SI.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Suporte Informático</h5>
+                                <p class="card-text" style="text-align: justify;">Formação prática e técnica para resolver problemas e garantir o bom funcionamento de sistemas e equipamentos, proporcionando soluções rápidas e eficientes no universo digital.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="img/ASR.png" class="card-img-top" alt="Curso 2" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Admiração de Sistemas e Redes Informáticos</h5>
+                                <p class="card-text" style="text-align: justify;">Formação para gerenciar e otimizar sistemas e redes, garantindo eficiência e segurança na infraestrutura tecnológica.</p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Adicione mais cursos aqui conforme necessário -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fas fa-link me-2"></i> Páginas Associadas
+                        </a>
+                        <div class="dropdown-menu fade-up m-0">
+                            <a href="https://web.facebook.com/profile.php?id=100069859640023&__tn__=-UC*F" class="dropdown-item">Facebook</a>
+                            <a href="https://wa.me/258845911627" class="dropdown-item">WhatsApp</a>
+                            <a href="" class="dropdown-item">Youtube</a>
+                            <a href="" class="dropdown-item">Blog</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">
+                        <i class="fas fa-phone-alt me-2"></i> Contacto
+                    </a>
+                </div>
+                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                        <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="mb-1 text-white">Para Ligações </p>
+                        <h5 class="m-0 text-secondary">+258 87 739 6100</h5>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/Capa.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transformando ideias e inovando o futuro!</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Ciência e inovação conectando talentos e criando oportunidades para um mundo mais justo.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/Estudantes.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transformando ideias e inovando o futuro!</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Ciência e inovação conectando talentos e criando oportunidades para um mundo mais justo.</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Inovamos hoje, transformamos vidas amanhã. O futuro sustentável começa agora!</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid w-100 h-100" src="img/abertura.jpg" alt="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
+                        <h5 class="text-truncate me-3 mb-0">Abertura do ano</h5>
+                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid w-100 h-100" src="img/Encarregados.jpg" alt="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
+                        <h5 class="text-truncate me-3 mb-0">Abertura do ano</h5>
+                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid w-100 h-100" src="img/Formandafala.jpg" alt="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
+                        <h5 class="text-truncate me-3 mb-0">Abertura do ano</h5>
+                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase">Sobre Nós</h6>
+                    <h1 class="mb-4">O IMPCI foi fundado em 2022 com o objetivo de promover a ciência, inovação e desenvolvimento sustentável em nossa comunidade.</h1>
+                    <p style="text-align: justify;" class="mb-4" >O Instituto Médio Politécnico de Ciências e Inovação (IMPCI) é um centro de excelência dedicado à formação de profissionais altamente qualificados nas áreas mais estratégicas para o desenvolvimento sustentável e a evolução da sociedade. Através dos nossos programas de capacitação, buscamos formar líderes que sejam capazes de transformar a realidade ao seu redor, proporcionando soluções inovadoras para os desafios globais e locais.São áreas de formação do Instituto Médio Politécnico de Ciências e Inovação (IMPCI) as seguintes:</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Saúde;</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Administração e Gestão;</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Tecnologias da Informação e Comunicação (TICs).</p>
+                    <div class="bg-primary d-flex align-items-center p-4 mt-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt fa-2x text-primary"></i>
+                        </div>
+                        <div class="ms-3">
+                            <p class="fs-5 fw-medium mb-2 text-white">Emergência, das 07h às 17h:30</p>
+                            <h3 class="m-0 text-secondary">+258 87 739 6100</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-4" style="min-height: 500px;">
+                    <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/labora.PNG" style="object-fit: cover; padding: 0 0 40px 100px;" alt="">
+                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="img/EstagioI.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- Fact Start -->
+    <style>
+        
+        .fact {
+            background: url('img/HinoNa.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 5rem 0;
+            position: relative;
+        }
+    
+        /* Overlay mais escuro */
+        .fact::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Preto com 70% de opacidade */
+        }
+    
+        /* Garante que o conteúdo fique acima do overlay */
+        .fact .container {
+            position: relative;
+            z-index: 1;
+        }
+    
+        .fact i,
+        .fact h2,
+        .fact p {
+            color: #ffffff !important; /* Branco para melhor contraste */
+            font-weight: bold; /* Negrito */
+        }
+    </style>
+    </head>
+    <body>
+    
+        <div class="container-fluid fact">
+            <div class="container">
+                <div class="row g-4 d-flex flex-row flex-wrap justify-content-center">
+                    <div class="col-auto text-center wow fadeIn" data-wow-delay="0.1s">
+                        <i class="fa fa-calendar-alt fa-2x mb-3"></i>
+                        <h2 class="mb-2" data-toggle="counter-up">4</h2>
+                        <p class="mb-0">Anos de existência</p>
+                    </div>
+                    <div class="col-auto text-center wow fadeIn" data-wow-delay="0.3s">
+                        <i class="fa fa-chalkboard-teacher fa-2x mb-3"></i>
+                        <h2 class="mb-2" data-toggle="counter-up">47</h2>
+                        <p class="mb-0">Formadores</p>
+                    </div>
+                    <div class="col-auto text-center wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fa fa-user-graduate fa-2x mb-3"></i>
+                        <h2 class="mb-2" data-toggle="counter-up">1720</h2>
+                        <p class="mb-0">Estudantes em curso</p>
+                    </div>
+                    <div class="col-auto text-center wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-award fa-2x mb-3"></i>
+                        <h2 class="mb-2" data-toggle="counter-up">400</h2>
+                        <p class="mb-0">Estudantes Graduados</p>
+                    </div>
+                    <div class="col-auto text-center wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-book fa-2x mb-3"></i>
+                        <h2 class="mb-2" data-toggle="counter-up">14</h2>
+                        <p class="mb-0">Cursos</p>
+                    </div>
+                    <div class="col-auto text-center wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-handshake fa-2x mb-3"></i>
+                        <h2 class="mb-2" data-toggle="counter-up">2</h2>
+                        <p class="mb-0">Filiações</p>
+                    </div>
+                    <div class="col-auto text-center wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-users fa-2x mb-3"></i>
+                        <h2 class="mb-2" data-toggle="counter-up">31</h2>
+                        <p class="mb-0">Corpo Técnico-Administrativo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    <!-- Fact End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5 px-4 px-lg-0" >
+        <div class="row g-0">
+            <div class="col-lg-3 d-none d-lg-flex" style="background-color: #FF4917;">
+                <div class="d-flex align-items-center justify-content-center bg-primary w-100 h-100" style="background-color: #FF4917;">
+                    <h1 class="display-3 text-white m-0" style="transform: rotate(-90deg);">4 Anos de Experiência</h1>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-9">
+                <div class="ms-lg-5 ps-lg-5">
+                    <div class="text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="text-secondary text-uppercase">Nossos Cursos</h6>
+                        <h1 class="mb-5">Explore Nossos Cursos</h1>
+                    </div>
+                    <div class="owl-carousel service-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-stethoscope fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Enfermagem Geral</h4>
+                            <p>Seja a mudança no mundo através do cuidado e da dedicação. Venha fazer parte dessa missão!.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-baby-carriage fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Enfermagem de Saúde Materna Infantil;</h4>
+                            <p>Formação de excelência para cuidar com conhecimento, dedicação e humanização desde a gestação até os primeiros anos de vida.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-flask fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Laboratório de Análises Clínicas;</h4>
+                            <p>Formação de qualidade para futuros profissionais na realização de exames laboratoriais.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-capsules fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Farmácia</h4>
+                            <p>Capacitação de excelência para o desenvolvimento, controle e distribuição de medicamentos, garantindo saúde e bem-estar com conhecimento e ética..</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-leaf fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Medicina Preventiva e Saneamento do Meio;</h4>
+                            <p>Promovendo a saúde e prevenindo doenças, com foco na qualidade de vida e no cuidado ambiental.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-hospital fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Administração Hospitalar;</h4>
+                            <p>Gestão eficiente de recursos e serviços de saúde, garantindo qualidade no atendimento e excelência na administração hospitalar.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-apple-alt fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Nutrição;</h4>
+                            <p>Promoção da saúde através da alimentação equilibrada, capacitando profissionais para orientar e transformar vidas com conhecimento e cuidado nutricional.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-stethoscope fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Medicina Geral;</h4>
+                            <p>Formação completa para futuros médicos, capacitando-os a diagnosticar, tratar e prevenir doenças, promovendo saúde com competência e empatia em cada atendimento.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-clipboard fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Gestão;</h4>
+                            <p>Formação voltada para o desenvolvimento de líderes capazes de planificar, coordenar e otimizar recursos.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-users fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Gestão de Recursos Humanos;</h4>
+                            <p>Desenvolvendo competências para gerenciar talentos, promover o bem-estar organizacional e contribuir para o sucesso das equipes e empresas.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-building fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Administração Pública;</h4>
+                            <p> Gerindo com eficiencia os recursos e serviços públicos, com foco na melhoria da qualidade de vida da sociedade e no desenvolvimento sustentável.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-calculator fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Contabilidade;</h4>
+                            <p> Formação essencial para o domínio das práticas financeiras, capacitando profissionais a gerenciar, analisar e otimizar recursos, garantindo a saúde econômica de empresas e organizações.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-laptop fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Suporte Informático;</h4>
+                            <p> Formação prática e técnica para resolver problemas e garantir o bom funcionamento de sistemas e equipamentos, proporcionando soluções rápidas e eficientes no universo digital.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                        <div class="bg-light p-4">
+                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
+                                <i class="fa fa-network-wired fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">Admiração de Sistemas e Redes Informáticos;</h4>
+                            <p> Formação para gerenciar e otimizar sistemas e redes, garantindo eficiência e segurança na infraestrutura tecnológica.</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Excelência;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Compromisso;</p>
+                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Inovação.</p>
+                            <a href="" class="btn bg-white text-primary w-100 mt-2">Ler mais<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Booking Start -->
+    <div class="container-fluid my-5 px-0">
+        <div class="video wow fadeInUp" data-wow-delay="0.1s">
+            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/NoqcQDDIET8?" data-bs-target="#videoModal">
+                <span></span>
+            </button>
+
+            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- 16:9 aspect ratio -->
+                            <div class="ratio ratio-16x9">
+                                <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                    allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-white mb-4">Testemunhos Dados Pelos que terminaram com sucesso.</h1>
+            <h3 class="text-white mb-0">Tudo em Tempo Record</h3>
+        </div>
+    <!-- Booking End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-secondary text-uppercase">Outros Testemunhos</h6>
+                <h1 class="mb-5">Nossos Estudantes e Encarregados dizem!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">O IMPCI não é apenas um centro de aprendizagem, mas um verdadeiro pilar para aqueles que buscam transformar suas vidas e a sociedade à sua volta.</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/enca.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">João Bambo</h5>
+                    <p class="m-0">Encarregado</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Estudar no IMPCI tem sido uma das experiências mais enriquecedoras da minha vida. Desde o momento em que entrei nesta instituição, percebi que estava prestes a viver algo transformador.</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/Estu.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Binizia Caranguejo</h5>
+                    <p class="m-0">Estudante</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">A cada aula, evento ou atividade, o IMPCI nos ensina que a cidadania vai além dos direitos, ela envolve também responsabilidades e a capacidade de agir para melhorar a comunidade ao nosso redor.</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/Est.jpeg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Joaquim Mendes</h5>
+                    <p class="m-0">Estudante</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Não se trata apenas de aprender teorias, mas de entender como podemos aplicar esse conhecimento para transformar nossas realidades e a sociedade ao nosso redor.</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/Test.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Juliana Meque</h5>
+                    <p class="m-0">Estudante</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-orange text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #FF4917;">
+
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Endereço</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bairro Francisco Manhanga, Chimoio, Moçambique</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+258 87 739 6100</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>impdecienciaeinovacao@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://wa.me/258845911627"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/profile.php?id=100069859640023&__tn__=-UC*F"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Horário de funcionamento</h4>
+                    <h6 class="text-light">Segunda a sexta:</h6>
+                    <p class="mb-4">07h.00 - 17h:35</p>
+                    <h6 class="text-light">Sábado</h6>
+                    <p class="mb-0">07.00 - 12h:00</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Áreas de Formação</h4>
+                    <a class="btn btn-link" href="">Saúde</a>
+                    <a class="btn btn-link" href="">Administração e Gestão</a>
+                    <a class="btn btn-link" href="">TIC’s</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Boletim informativo</h4>
+                    <p>Encontre a notícia do dia.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input id="emailInput" class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Seu email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" onclick="validarEmail()">Entrar</button>
+                    </div>
+                </div>
+                
+                <script>
+                    function validarEmail() {
+                        var email = document.getElementById("emailInput").value;
+                        
+                        // Expressão regular para validar formato do e-mail
+                        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                
+                        if (emailRegex.test(email)) {
+                            // Se o formato estiver correto, redireciona para a página do boletim
+                            window.location.href = "img/Boletim.pdf";
+                        } else {
+                            alert("Por favor, insira um e-mail válido.");
+                        }
+                    }
+                </script>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">IMPCI Site</a>,Todos os direitos reservados.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Projetado por <a class="border-bottom" href="https://chumasamuel.github.io/webfolio/">Compuclínico Chuma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
